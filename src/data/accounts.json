@@ -1,17 +1,1 @@
-[
-  {
-    "id": "1",
-    "name": "Ola",
-    "balance": "20"
-  },
-  {
-    "id": "2",
-    "name": "Kari",
-    "balance": "30"
-  },
-  {
-    "id": "3",
-    "name": "Jens",
-    "balance": "40"
-  }
-]
+[{"id": 1, "name": "Ola", "balance": 100.0}, {"id": 2, "name": "Kari", "balance": 100.0}, {"id": 3, "name": "Jens", "balance": 100.0}]

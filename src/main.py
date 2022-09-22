@@ -30,17 +30,5 @@ def create_transaction(transaction_request: TransactionRequest):
         raise HTTPException(status_code=400, detail=str(e))
 
 
-@api.get("/test")
-def test():
-    try:
-        return backend.run_transaction(TransactionRequest(
-            source_account_id=1,
-            destination_account_id=2,
-            amount=20,
-        ))
-    except ValueError as e:
-        return {"error": str(e)}
-
-
 if __name__ == "__main__":
     uvicorn.run("main:api", port=8000, reload=True)

@@ -9,8 +9,8 @@ class Account(BaseModel):
 
 class Transaction(BaseModel):
     id: int
-    registered_time: int # Epoch milliseconds
-    executedTime: int    # Epoch milliseconds
+    time_registered: int  # Epoch milliseconds
+    time_executed: int    # Epoch milliseconds
     success: bool
     amount: float
     source_account: Account
